@@ -1,0 +1,28 @@
+---
+# jenkins variables
+project_name: docker-audiosilo
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: main
+repo_vars:
+  - EXT_GIT_BRANCH = 'main'
+  - EXT_USER = 'KodeStar'
+  - EXT_REPO = 'audiosilo-server'
+  - BUILD_VERSION_ARG = 'AUDIOSILO_RELEASE'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-audiosilo'
+  - CONTAINER_NAME = 'audiosilo'
+  - DOCKERHUB_IMAGE = 'linuxserver/audiosilo'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/audiosilo'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/audiosilo'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='8080'
+  - CI_SSL='true'
+  - CI_DELAY='120'
+  - CI_DOCKERENV=''
+  - CI_AUTH=''
+  - CI_WEBPATH=''
